@@ -1,0 +1,38 @@
+{
+  "name": "tugas1_notesbackend",
+  "version": "1.0.0",
+  "description": "openmusicAPI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "start-prod": "NODE_ENV=production node ./src/server.js",
+    "start-dev": "nodemon ./src/server.js",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --fix --ext .js,.jsx .",
+    "migrate": "node-pg-migrate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.1",
+    "@hapi/inert": "^7.1.0",
+    "@hapi/jwt": "^3.2.0",
+    "amqplib": "^0.10.3",
+    "aws-sdk": "^2.1369.0",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "joi": "^17.9.1",
+    "nanoid": "^3.1.22",
+    "node-pg-migrate": "^6.2.2",
+    "nodemailer": "^6.9.1",
+    "pg": "^8.10.0",
+    "redis": "^4.6.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^2.0.22"
+  }
+}
